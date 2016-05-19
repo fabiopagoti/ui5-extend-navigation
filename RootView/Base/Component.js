@@ -18,6 +18,7 @@ sap.ui.define([
                     transition: "slide",
                 },
                 routes: [
+                    // {}, // uncomment this to make r1 available in the extension component
                     {
                         pattern: "",
                         name: "r1",
