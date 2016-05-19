@@ -1,0 +1,5 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" controllerName="base.app.controller.Second">
+	<Page title="Page B">
+		<Button press=".onPressButton2" text="Go to 1"/>
+	</Page>
+</mvc:View>
