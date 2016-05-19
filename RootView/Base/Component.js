@@ -15,9 +15,6 @@ sap.ui.define([
                     viewType: "XML",
                     viewPath: "base.app.view",
                     controlId: "app",
-                    // bypassed: {
-                    //     target: ["home"]
-                    // }
                     transition: "slide",
                 },
                 routes: [
@@ -30,7 +27,13 @@ sap.ui.define([
                         pattern: "p2",
                         name: "r2",
                         target: "t2"
-                    }
+                    },
+                    {
+                        pattern: "p3",
+                        name: "r3",
+                        target: "t3"
+                    },
+
                 ],
                 targets: {
                     t1: {
@@ -41,6 +44,11 @@ sap.ui.define([
                     t2:{
                         viewName: "Second",
                         viewLevel: 1,
+                        controlAggregation: "pages"
+                    },
+                    t3:{
+                        viewName: "Third",
+                        viewLevel: 2,
                         controlAggregation: "pages"
                     }
                 }
@@ -57,18 +65,7 @@ sap.ui.define([
             // initialize the router
             this._router.initialize();
 
-        }//,
-
-        // createContent: function () {
-
-        //     // create root view
-        //     var oView = sap.ui.view({
-        //         viewName: "base.app.view.App",
-        //         type: "XML"
-        //     });
-
-        //     return oView;
-        // }
+        }
 
     });
 

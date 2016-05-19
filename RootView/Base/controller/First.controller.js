@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Controller) {
    "use strict";
    return Controller.extend("base.app.controller.First", {
-      onPressButton1 : function () {
+      onPressButton : function () {
          this.getOwnerComponent().getRouter().navTo("r2");
       }
    });
